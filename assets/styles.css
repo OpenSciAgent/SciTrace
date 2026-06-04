@@ -113,23 +113,50 @@ nav a[aria-current="page"] {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 16px;
-  width: min(760px, 100%);
-  min-height: 36px;
-  margin-top: 26px;
+  gap: 10px 24px;
+  width: min(980px, 100%);
+  margin-top: 24px;
+  color: var(--ink);
+  font-size: clamp(17px, 1.8vw, 21px);
+  font-weight: 720;
+  line-height: 1.45;
 }
 
 .author-block span {
-  width: 150px;
-  height: 16px;
-  border-bottom: 2px solid rgba(8, 127, 131, 0.28);
+  white-space: nowrap;
 }
 
 .affiliation-line {
-  width: min(460px, 70%);
-  height: 16px;
-  margin-top: 10px;
-  border-bottom: 2px solid rgba(92, 104, 112, 0.22);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  width: min(860px, 100%);
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: clamp(14px, 1.35vw, 16px);
+  line-height: 1.45;
+}
+
+.author-note {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  width: min(820px, 100%);
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.author-block sup,
+.affiliation-line sup,
+.author-note sup {
+  margin-left: 2px;
+  color: var(--teal);
+  font-size: 0.68em;
+  font-weight: 780;
 }
 
 .actions,
